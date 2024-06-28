@@ -1,46 +1,42 @@
+import figures.Line;
+import figures.Rectangule;
+import figures.RectanguleTriangule;
+import figures.Square;
+
 public class Main {
     public static void main(String[] args) {
         //Example for printing method
-        printLine(3);
-        printLine(15);
 
-        printSquare(5);
-        printSquare(10);
+        //Line
+        Line l1 = new Line(3);
+        l1.printLine();
 
-        printanguletriangule(6);
-        printanguletriangule(9);
+        Line l2 = new Line(15);
+        l2.printLine();
+
+        //Square
+        Square sq1 = new Square(4);
+        sq1.printSquare();
+
+        Square sq2 = new Square(8);
+        sq1.printSquare();
+
+        //RectanguleTriangule
+        RectanguleTriangule tr1 = new RectanguleTriangule(2);
+        tr1.printRectanguleTriangule();
+
+        RectanguleTriangule tr2 = new RectanguleTriangule(8);
+        tr2.printRectanguleTriangule();
+        
+        //Rectangule
+        Rectangule r1 = new Rectangule(6,4);
+        r1.printRectangule();
+
+        Rectangule r2 = new Rectangule(7,3);
+        r2.printRectangule();
+
     }
 
-    public static void printLine(int num) {
-        System.out.println("-----Printing Line " + num + " -----");
-        for (int i = 0; i < num; i++) {
-            System.out.print("* ");
-        }
-        ;
-        System.out.println();
-    }
-
-    public static void printSquare(int num) {
-        System.out.println("-----Printing Square " + num + " -----");
-        for (int height = 0; height < num; height++) {
-            for (int weight = 0; weight < num; weight++) {
-                System.out.print(" * ");
-            }
-            System.out.println(" ");
-        }
-    }
-
-    public static void printanguletriangule(int num) {
-        System.out.println("-------printng rectangule triangule" + num + "---------");
-        for (int height = 0; height < num; height++) {
-            for (int weight = 0; weight < num; weight++) {
-                if (weight <= height) {
-                    System.out.print(" * ");
-                }
-            }
-            System.out.println(" ");
-        }
-    }
 }
 
 
