@@ -21,6 +21,10 @@ public class Square {
         System.out.println("Square Perimeter: " + perimeter + "[cm]");
     }
 
+    public void printArea(){
+        double area = lenght * lenght;
+        System.out.println("Square Area: " + area + "[cm2]");
+    }
 
     public Square(int lenght) {
         this.lenght = lenght;

@@ -25,6 +25,11 @@ public class Rectangule {
         double perimeter = (width * 2) * (height * 2);
         System.out.println("Rectangule Perimeter: " + perimeter + "[cm]");
     }
+    public void printArea(){
+        double area = width * height;
+        System.out.println("Rectangule Area: " + area + "[cm2]");
+    }
+
     public int getWidth() {
         return width;
     }
