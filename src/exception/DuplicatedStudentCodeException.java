@@ -1,6 +1,5 @@
 package exception;
 
-public class DuplicatedStudentCodeException {
-    public DuplicatedStudentCodeException(String message) {
-        super(message);}
+public class DuplicatedStudentCodeException extends Exception{
+    public DuplicatedStudentCodeException(String message) {super(message);}
 }
